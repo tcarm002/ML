@@ -48,12 +48,12 @@
 
 <p> Hardware nodes were placed throughout a single-story residential home. Paired IR beams on the nodes allowed us to detect the crossing direction of an occupant moving from one region to another region. We also collected data related to lighting and temperature information using the sensors described in the previous sections.
 
-<img src="images/NodeInternals.eps" alt="Node internals" style="width:304px;height:228px" align="middle">
+<img src="images/NodeInternals.jpg" alt="Node internals" style="width:304px;height:228px" align="middle">
 
 The figure below shows the setup of the nodes throughout the home. Each blue box represents a node, which is placed at doorways and crossings between different rooms. The house is divided into 5 regions ($R_1$-$R_5$) with 6 nodes creating the partitions. The front entrance/exit of the house is monitored by node 1 and crossing past this node leads into $R_1$- the living room. Node 2 leads into $R_2$ which contains a bathroom, bedroom and hallway. The hallway from $R_2$ leads into $R_3$ which is a home office. At another side of $R_1$ is node 4 which leads into $R_4$, a kitchen/dining room. It is bordered by node 5 which leads into $R_5$, a multipurpose room in the back of the house. The last node is $R_6$, which leads to the back entrance/exit of the house.
 </p>
 
-<img src="images/resident.eps" alt="Resident" style="width:304px;height:228px align="middle">
+<img src="images/resident.jpg" alt="Resident" style="width:304px;height:228px align="middle">
 
 <h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors</h3>
