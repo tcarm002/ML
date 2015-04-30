@@ -61,6 +61,26 @@ The figure below shows the setup of the nodes throughout the home. Each blue box
 </p>
 
 <h3>
+<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Machine Learning Application: Support Vector Regression</h3>
+<p>
+Once noisy data was filtered out, we sought to find a more precise scoring criterion for the efficiency of a given room. We decided to use Support Vector Regression (SVR), a support vector machine that does regression instead of classification, to predict the efficiency value. Some of the advantages of support vector machines are the effectiveness in high dimensional spaces and the ability to apply different kernel functions for the decision function. The specification of a kernel function is particularly useful as we continue optimizing the system.</p>
+
+<p>
+<img src="images/svr_final.png" alt="Resident" style="width:500px;height:550px align="middle">
+</p>
+
+<h3>
+<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Other Machine Learning Applications: K-means and HAC</h3>
+<p>
+We use two centroid-based clustering algorithms: K-Means and Hierarchical Agglomerative clustering. After several trials, we were most successful using the two additional features mentioned in the previous section; namely, time difference since last reading from that node and number of times the node produced a signal in the past minute. We began by using a K-Means clustering on our data.  Yet, we began to realize that since we had so much noisy data, the means were heavily weighted toward the noisy data. Because of this, we changed our approach slightly and used Hierarchical Agglomerative Clustering (HAC). Since HAC begins by assuming that each data point is independent and forms clusters from all these independent points, we believed that we may see more appropriate clusters.</p>
+
+<p>
+<img src="images/kmeans.jpg" alt="kmeans" style="width:500px;height:550px align="middle">
+</p>
+<p>
+<img src="images/hac.jpg" alt="HAC" style="width:500px;height:550px align="middle">
+</p>
+<h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors</h3>
 
 <p>Triana Carmenate and Mike Novo</p>
@@ -69,6 +89,8 @@ The figure below shows the setup of the nodes throughout the home. Each blue box
 <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contact and Questions</h3>
 
 <p>tcarm002@fiu.edu</p>
+<p>mnovo006@fiu.edu</p>
+
       </section>
     </div>
 
