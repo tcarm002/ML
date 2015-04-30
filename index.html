@@ -41,9 +41,19 @@
    In this project, we will focus on the latter. Occupant behaviors play a key role in generating energy expenditure in buildings and  by decoding occupant behaviors, we can identify energy waste and furthermore, make suggestions and enforce policies that will curtail energy waste.Our previous work in this project proposed an information space approach for automated detection and proactive monitoring of energy waste due to occupant behaviors. Motion Planning strategies were used to capture minimal information necessary to detect wasteful states of occupants utilizing a sensor network consisting of inexpensive distance, light, temperature sensors. In this paper we focus on Machine learning algorithms that be applied to our collected data in order to detect energy wasteful states and pro-actively eliminate energy expenditure by calculating a score associated with occupants in different regions. This score will be used to suggest policies to users or facility managers to help reduce energy costs related to occupancy behaviors. We also apply clustering algorithms to correct noisy sensor data. We finally discuss a simple ranking algorithm that can be used to detect wasteful trajectories caused by energy-inefficient users.</p>
 
 <h3>
-<a id="rather-drive-stick" class="anchor" href="#rather-drive-stick" aria-hidden="true"><span class="octicon octicon-link"></span></a>On our data</h3>
+<a id="rather-drive-stick" class="anchor" href="#rather-drive-stick" aria-hidden="true"><span class="octicon octicon-link"></span></a></h3>
 
-<p>Some stuff about the data</p>
+<p>Experimental Setup</p>
+<p> Hardware nodes were placed throughout a single-story residential home. Paired IR beams on the nodes allowed us to detect the crossing direction of an occupant moving from one region to another region. We also collected data related to lighting and temperature information using the sensors described in the previous sections.
+
+<h2>Nodes</h2>
+<img src="images/NodeInternals.eps" alt="Node internals" style="width:304px;height:228px">
+
+The figure below shows the setup of the nodes throughout the home. Each blue box represents a node, which is placed at doorways and crossings between different rooms. The house is divided into 5 regions ($R_1$-$R_5$) with 6 nodes creating the partitions. The front entrance/exit of the house is monitored by node 1 and crossing past this node leads into $R_1$- the living room. Node 2 leads into $R_2$ which contains a bathroom, bedroom and hallway. The hallway from $R_2$ leads into $R_3$ which is a home office. At another side of $R_1$ is node 4 which leads into $R_4$, a kitchen/dining room. It is bordered by node 5 which leads into $R_5$, a multipurpose room in the back of the house. The last node is $R_6$, which leads to the back entrance/exit of the house.
+</p>
+
+<h2>Resident crossing</h2>
+<img src="images/resident.eps" alt="Resident" style="width:304px;height:228px">
 
 <h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors</h3>

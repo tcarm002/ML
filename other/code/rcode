@@ -1,0 +1,24 @@
+#Code to create rankings based on trajectories. This example uses dummy temperature data 
+#for the comparisons
+
+trajectories = as.matrix(read.table("mydata.txt"))
+
+
+definedkernel <- function(x,y) {
+ 
+  n<-length(x)
+  result<-dist(rbind(x, y),method="euclidean")
+ 
+  return(result)
+
+
+}
+
+
+K<-kernelMatrix(definedkernel, trajectories)
+
+
+ranked <- ranking(K, 1,iterations=100, alpha=0.1)
+
+
+ranked[1, 2] <- max(ranked[-1, 2])
